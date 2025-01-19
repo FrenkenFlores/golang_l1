@@ -5,6 +5,7 @@ import (
 
 	"github.com/FrenkenFlores/golang_l1/l1_1"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
+	"github.com/FrenkenFlores/golang_l1/l1_3"
 )
 
 func main() {
@@ -18,5 +19,9 @@ func main() {
 		a := l1_2.GetSquareList([]int{2, 4, 6, 8, 10})
 		fmt.Println(a)
 	}
-
+	{
+		fmt.Println("TEST L1.3")
+		a := l1_3.GetSquareSum([]int{2, 4, 6, 8, 10})
+		fmt.Println(a)
+	}
 }
