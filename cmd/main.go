@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/FrenkenFlores/golang_l1/l1_1"
+	"github.com/FrenkenFlores/golang_l1/l1_10"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -91,6 +92,13 @@ func main() {
 			fmt.Println("TEST L1.9")
 			var nums []int = []int{1, 2, 3, 4, 5}
 			l1_9.Pipeline(nums)
+		}
+	case "10":
+		{
+			fmt.Println("TEST L1.10")
+			var nums []float32 = []float32{-25.4, -27.0, 13.0, 19.0, 15.5, 24.5, -21.0, 32.5, 335.5, 333.7}
+			group := l1_10.GroupTemperature(nums)
+			fmt.Println(group)
 		}
 	}
 
