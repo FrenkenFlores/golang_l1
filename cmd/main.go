@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/FrenkenFlores/golang_l1/l1_1"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
@@ -10,6 +11,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_4"
 	"github.com/FrenkenFlores/golang_l1/l1_5"
 	"github.com/FrenkenFlores/golang_l1/l1_6"
+	"github.com/FrenkenFlores/golang_l1/l1_7"
 )
 
 func main() {
@@ -57,6 +59,24 @@ func main() {
 			l1_6.StopByTimer()
 			fmt.Println("Stop by Goexit")
 			l1_6.StopByGoexit()
+		}
+	case "7":
+		{
+			fmt.Println("TEST L1.7")
+			smap := l1_7.MutexMap{
+				Data: make(map[string]any),
+			}
+			for i := 0; i < 10; i++ {
+				go func() {
+					smap.Write(fmt.Sprintf("key_%d", i), i)
+				}()
+			}
+			time.Sleep(time.Second * time.Duration(1))
+			for i := 0; i < 10; i++ {
+				v, _ := smap.Read(fmt.Sprintf("key_%d", i))
+				fmt.Println(v)
+			}
+
 		}
 	}
 
