@@ -12,6 +12,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_5"
 	"github.com/FrenkenFlores/golang_l1/l1_6"
 	"github.com/FrenkenFlores/golang_l1/l1_7"
+	"github.com/FrenkenFlores/golang_l1/l1_8"
 )
 
 func main() {
@@ -76,7 +77,13 @@ func main() {
 				v, _ := smap.Read(fmt.Sprintf("key_%d", i))
 				fmt.Println(v)
 			}
-
+		}
+	case "8":
+		{
+			fmt.Println("TEST L1.8")
+			var n int64 = 0b11111111111111111111111111111111
+			var m int64 = l1_8.SetBit(n, 0, false)
+			fmt.Printf("%b\n", m)
 		}
 	}
 
