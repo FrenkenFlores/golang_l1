@@ -8,6 +8,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
+	"github.com/FrenkenFlores/golang_l1/l1_5"
 )
 
 func main() {
@@ -37,6 +38,12 @@ func main() {
 			fmt.Printf("Enter the number of workers: ")
 			fmt.Scan(&workers_n)
 			l1_4.ReadWriteThread(workers_n)
+		}
+	case "5":
+		{
+			fmt.Println("TEST L1.5")
+			var n int = 5
+			l1_5.WriteAndReadChan(n)
 		}
 	}
 
