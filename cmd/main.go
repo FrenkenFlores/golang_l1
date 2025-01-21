@@ -7,6 +7,7 @@ import (
 
 	"github.com/FrenkenFlores/golang_l1/l1_1"
 	"github.com/FrenkenFlores/golang_l1/l1_10"
+	"github.com/FrenkenFlores/golang_l1/l1_11"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -99,6 +100,15 @@ func main() {
 			var nums []float32 = []float32{-25.4, -27.0, 13.0, 19.0, 15.5, 24.5, -21.0, 32.5, 335.5, 333.7}
 			group := l1_10.GroupTemperature(nums)
 			fmt.Println(group)
+		}
+	case "11":
+		{
+			fmt.Println("TEST L1.11")
+			var a map[int]bool = map[int]bool{1: true, 2: true, 3: true, 4: true, 5: true}
+			var b map[int]bool = map[int]bool{10: true, 8: true, 3: true, 4: true, 5: true}
+
+			intersect := l1_11.Intersect(a, b)
+			fmt.Println(intersect)
 		}
 	}
 
