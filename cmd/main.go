@@ -13,6 +13,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_6"
 	"github.com/FrenkenFlores/golang_l1/l1_7"
 	"github.com/FrenkenFlores/golang_l1/l1_8"
+	"github.com/FrenkenFlores/golang_l1/l1_9"
 )
 
 func main() {
@@ -84,6 +85,12 @@ func main() {
 			var n int64 = 0b11111111111111111111111111111111
 			var m int64 = l1_8.SetBit(n, 0, false)
 			fmt.Printf("%b\n", m)
+		}
+	case "9":
+		{
+			fmt.Println("TEST L1.9")
+			var nums []int = []int{1, 2, 3, 4, 5}
+			l1_9.Pipeline(nums)
 		}
 	}
 
