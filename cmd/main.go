@@ -22,6 +22,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_20"
 	"github.com/FrenkenFlores/golang_l1/l1_21"
 	"github.com/FrenkenFlores/golang_l1/l1_22"
+	"github.com/FrenkenFlores/golang_l1/l1_23"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
 	"github.com/FrenkenFlores/golang_l1/l1_5"
@@ -224,6 +225,13 @@ func main() {
 			fmt.Println(l1_22.Operate(a, b, l1_22.Sub))
 			fmt.Println(l1_22.Operate(a, b, l1_22.Mult))
 			fmt.Println(l1_22.Operate(a, b, l1_22.Div))
+		}
+	case "23":
+		{
+			fmt.Println("TEST L1.23")
+			a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+			fmt.Println(l1_23.DeleteSliceElement(a, 9))
+			fmt.Println(l1_23.DeleteSliceElements(a, 2, 4))
 		}
 	}
 
