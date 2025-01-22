@@ -16,6 +16,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_16"
 	"github.com/FrenkenFlores/golang_l1/l1_17"
 	"github.com/FrenkenFlores/golang_l1/l1_18"
+	"github.com/FrenkenFlores/golang_l1/l1_19"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -184,6 +185,12 @@ func main() {
 			}
 			wg.Wait()
 			fmt.Println(cts.Get())
+		}
+	case "19":
+		{
+			fmt.Println("TEST L1.19")
+			str := "Hello World!"
+			fmt.Println(l1_19.ReverseString(str))
 		}
 	}
 
