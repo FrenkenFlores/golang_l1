@@ -12,6 +12,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_13"
 	"github.com/FrenkenFlores/golang_l1/l1_14"
 	"github.com/FrenkenFlores/golang_l1/l1_15"
+	"github.com/FrenkenFlores/golang_l1/l1_16"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -145,6 +146,14 @@ func main() {
 			fmt.Println("TEST L1.15")
 			l1_15.SomeFunc()
 			l1_15.SomeFuncFix()
+		}
+	case "16":
+		{
+			fmt.Println("TEST L1.16")
+			var arr []int = []int{6, 2, 10, 4, 5}
+			fmt.Println(arr)
+			l1_16.QuickSort(arr)
+			fmt.Println(arr)
 		}
 	}
 
