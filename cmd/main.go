@@ -19,6 +19,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_19"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_20"
+	"github.com/FrenkenFlores/golang_l1/l1_21"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
 	"github.com/FrenkenFlores/golang_l1/l1_5"
@@ -198,6 +199,20 @@ func main() {
 			fmt.Println("TEST L1.20")
 			str := "Hello World!"
 			fmt.Println(l1_20.ReverseWords(str))
+		}
+	case "21":
+		{
+			fmt.Println("TEST L1.21")
+			op := l1_21.OldPrinter{}
+			mp := l1_21.ModernPrinter{}
+			ap := l1_21.AdapterPrinter{OP: &op}
+
+			func(p l1_21.Printer) {
+				p.PrintModern("Hello, world!")
+			}(&mp)
+			func(p l1_21.Printer) {
+				p.PrintModern("Hello, world!")
+			}(&ap)
 		}
 	}
 
