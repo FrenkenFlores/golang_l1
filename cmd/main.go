@@ -24,6 +24,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_22"
 	"github.com/FrenkenFlores/golang_l1/l1_23"
 	"github.com/FrenkenFlores/golang_l1/l1_24"
+	"github.com/FrenkenFlores/golang_l1/l1_25"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
 	"github.com/FrenkenFlores/golang_l1/l1_5"
@@ -239,6 +240,12 @@ func main() {
 			fmt.Println("TEST L1.24")
 			a, b := l1_24.Point{X: 10.0, Y: 20.0}, l1_24.Point{X: 30.0, Y: 40.0}
 			fmt.Println(a.Distance(b))
+		}
+	case "25":
+		{
+			fmt.Println("TEST L1.25")
+			l1_25.Sleep(3)
+			fmt.Println("Done")
 		}
 	}
 
