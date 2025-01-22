@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"sync"
 	"time"
@@ -20,6 +21,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_20"
 	"github.com/FrenkenFlores/golang_l1/l1_21"
+	"github.com/FrenkenFlores/golang_l1/l1_22"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
 	"github.com/FrenkenFlores/golang_l1/l1_5"
@@ -213,6 +215,15 @@ func main() {
 			func(p l1_21.Printer) {
 				p.PrintModern("Hello, world!")
 			}(&ap)
+		}
+	case "22":
+		{
+			fmt.Println("TEST L1.22")
+			a, b := 6*int64(math.Pow(2, 20)), 3*int64(math.Pow(2, 20))
+			fmt.Println(l1_22.Operate(a, b, l1_22.Sum))
+			fmt.Println(l1_22.Operate(a, b, l1_22.Sub))
+			fmt.Println(l1_22.Operate(a, b, l1_22.Mult))
+			fmt.Println(l1_22.Operate(a, b, l1_22.Div))
 		}
 	}
 
