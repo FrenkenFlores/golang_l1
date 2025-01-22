@@ -25,6 +25,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_23"
 	"github.com/FrenkenFlores/golang_l1/l1_24"
 	"github.com/FrenkenFlores/golang_l1/l1_25"
+	"github.com/FrenkenFlores/golang_l1/l1_26"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
 	"github.com/FrenkenFlores/golang_l1/l1_5"
@@ -246,6 +247,15 @@ func main() {
 			fmt.Println("TEST L1.25")
 			l1_25.Sleep(3)
 			fmt.Println("Done")
+		}
+	case "26":
+		{
+			fmt.Println("TEST L1.26")
+			fmt.Println(l1_26.CheckUnique("abc"))
+			fmt.Println(l1_26.CheckUnique("Abc"))
+			fmt.Println(l1_26.CheckUnique("abcabc"))
+			fmt.Println(l1_26.CheckUnique("abcABC"))
+
 		}
 	}
 
