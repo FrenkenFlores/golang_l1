@@ -10,6 +10,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_11"
 	"github.com/FrenkenFlores/golang_l1/l1_12"
 	"github.com/FrenkenFlores/golang_l1/l1_13"
+	"github.com/FrenkenFlores/golang_l1/l1_14"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -128,6 +129,15 @@ func main() {
 			fmt.Println(a, b)
 			l1_13.Swip(&a, &b)
 			fmt.Println(a, b)
+		}
+	case "14":
+		{
+			fmt.Println("TEST L1.14")
+			fmt.Println(l1_14.FindType(1))
+			fmt.Println(l1_14.FindType(true))
+			fmt.Println(l1_14.FindType("Hello"))
+			fmt.Println(l1_14.FindType(1.0))
+			fmt.Println(l1_14.FindType(nil))
 		}
 	}
 
