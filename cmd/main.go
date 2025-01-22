@@ -8,6 +8,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_1"
 	"github.com/FrenkenFlores/golang_l1/l1_10"
 	"github.com/FrenkenFlores/golang_l1/l1_11"
+	"github.com/FrenkenFlores/golang_l1/l1_12"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -109,6 +110,15 @@ func main() {
 
 			intersect := l1_11.Intersect(a, b)
 			fmt.Println(intersect)
+		}
+	case "12":
+		{
+			fmt.Println("TEST L1.12")
+			var a []string = []string{"cat", "dog", "cat", "zebra"}
+			set := l1_12.MakeSet(a)
+			for k := range set {
+				fmt.Println(k)
+			}
 		}
 	}
 
