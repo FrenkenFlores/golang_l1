@@ -13,6 +13,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_14"
 	"github.com/FrenkenFlores/golang_l1/l1_15"
 	"github.com/FrenkenFlores/golang_l1/l1_16"
+	"github.com/FrenkenFlores/golang_l1/l1_17"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -154,6 +155,18 @@ func main() {
 			fmt.Println(arr)
 			l1_16.QuickSort(arr)
 			fmt.Println(arr)
+		}
+	case "17":
+		{
+			fmt.Println("TEST L1.17")
+			var arr []int = []int{1, 2, 3, 4, 5}
+			fmt.Println(arr)
+			res, found := l1_17.BinarySearch(arr, 31)
+			if found {
+				fmt.Println(res)
+			} else {
+				fmt.Println("Not found")
+			}
 		}
 	}
 
