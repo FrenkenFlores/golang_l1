@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"sync"
 	"time"
 
 	"github.com/FrenkenFlores/golang_l1/l1_1"
@@ -14,6 +15,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_15"
 	"github.com/FrenkenFlores/golang_l1/l1_16"
 	"github.com/FrenkenFlores/golang_l1/l1_17"
+	"github.com/FrenkenFlores/golang_l1/l1_18"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -167,6 +169,21 @@ func main() {
 			} else {
 				fmt.Println("Not found")
 			}
+		}
+	case "18":
+		{
+			fmt.Println("TEST L1.18")
+			cts := l1_18.CountedStruct{}
+			wg := sync.WaitGroup{}
+			for i := 0; i < 10; i++ {
+				wg.Add(1)
+				go func() {
+					cts.Inc()
+					wg.Done()
+				}()
+			}
+			wg.Wait()
+			fmt.Println(cts.Get())
 		}
 	}
 
