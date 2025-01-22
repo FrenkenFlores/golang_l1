@@ -9,6 +9,7 @@ import (
 	"github.com/FrenkenFlores/golang_l1/l1_10"
 	"github.com/FrenkenFlores/golang_l1/l1_11"
 	"github.com/FrenkenFlores/golang_l1/l1_12"
+	"github.com/FrenkenFlores/golang_l1/l1_13"
 	"github.com/FrenkenFlores/golang_l1/l1_2"
 	"github.com/FrenkenFlores/golang_l1/l1_3"
 	"github.com/FrenkenFlores/golang_l1/l1_4"
@@ -119,6 +120,14 @@ func main() {
 			for k := range set {
 				fmt.Println(k)
 			}
+		}
+	case "13":
+		{
+			fmt.Println("TEST L1.13")
+			var a, b int = 0, 1
+			fmt.Println(a, b)
+			l1_13.Swip(&a, &b)
+			fmt.Println(a, b)
 		}
 	}
 
